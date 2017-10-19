@@ -41,7 +41,7 @@ describe 'selinux' do
           }
         end
 
-        it { is_expected.to contain_package('selinux-policy-devel').with(ensure: 'present') }
+        it { is_expected.to contain_package('policycoreutils-python').with(ensure: 'present') }
       end
     end
 
